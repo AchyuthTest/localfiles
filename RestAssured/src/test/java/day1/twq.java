@@ -17,8 +17,8 @@ public class twq {
 		WebDriverManager.chromedriver().setup();
 		option = new ChromeOptions();
 		option.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(option);
-        driver.manage().window().maximize();
+                driver = new ChromeDriver(option);
+                driver.manage().window().maximize();
 		driver.get("https://www.ilovepdf.com/word_to_pdf");
 		driver.findElement(By.id("pickfiles")).click();
 		Runtime.getRuntime().exec("E:\\AutoIT_Files\\auscript1.exe");
